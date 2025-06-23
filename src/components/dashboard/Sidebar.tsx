@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Home, ServerCog, Settings2, Menu, X } from "lucide-react";
+import { Home, ServerCog, Binary, Menu, X } from "lucide-react";
 import Link from "next/link";
 import clsx from "clsx";
 
@@ -13,7 +13,7 @@ export default function Sidebar() {
   const menuItems = [
     { label: "Inicio", icon: <Home size={20} />, href: "/dashboard" },
     { label: "APIs", icon: <ServerCog size={20} />, href: "/dashboard/apis" },
-    { label: "KVMs", icon: <Settings2 size={20} />, href: "/dashboard/kvm" },
+    { label: "b64", icon: <Binary size={20} />, href: "/dashboard/herramientas" },
   ];
 
   return (
